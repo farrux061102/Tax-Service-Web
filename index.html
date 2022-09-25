@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tax Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-navbar">
+                <div class="social-navbar col-md-4">
+                    <ul class="social-items">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-navbar col-md-8">
+                    <div class="phone-navbar">
+                        <div class="phone-items">
+                            <i class="fa fa-phone"></i>
+                            <div class="phone-detail">
+                                <p>Phone NO</p>
+                                <p>(+99871)234-11-03</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mail-navbar">
+                        <div class="mail-items">
+                            <i class="fa fa-envelope"></i>
+                            <div class="mail-detail">
+                                <p>Mail address</p>
+                                <p>info@mjko.uz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advice-navbar">
+                        <div class="advice-items">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Guideline</p>
+                            <button class="btn-1">Send complient</button>
+                        </div>
+                    </div>
+                    <div claass="other-navbar">
+                        <div class="other-items">
+                            <i class="fa fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa fa-globe"></i>
+                            <div class="language">
+                                <p>UZ</p>
+                                <p>RU</p>
+                                <p>EN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navbar">
+                <div class="logo col-md-3">
+                    <div class="image-logo">
+                        <img src="./images/logo.png" alt="..." style="width:140px;height:90px;">
+                        <h5>The Communal <br>
+                            Servise Department <br>
+                            of Uzbekistan
+                        </h5>
+                    </div>
+                </div>
+                <div class="head-list col-md-9">
+                    <div class="head-list-items">
+                        <li>
+                            About Us
+                            <ul class="list1-items">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Committee</a></li>
+                                <li><a href="#">Regional management</a></li>
+                                <li><a href="#">Vacancies</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Services
+                            <ul class="list1-items">
+                                <li><a href="#">Regional service</a></li>
+                                <li><a href="#">Online payment</a></li>
+                                <li><a href="#">Advice for Committee</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                           Social Media 
+                           <ul class="list1-items">
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="#">Declaretions</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Documentation
+                            <ul class="list1-items">
+                                <li><a href="#">Main documents</a></li>
+                            </ul>
+                        </li>
+                        <span>
+                            <a href="#">Contact</a>
+                        </span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <span></span>
+                      <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Social Media</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">Documentation</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="heading1">
+            <div class="communal-heading">
+                <div class="heading1-items">
+                    <h4>
+                        The Communal <br>
+                        Servise Department <br>
+                        of Uzbekistan
+                    </h4>
+                </div>
+                <div class="communal-service">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-sharp fa-solid fa-fire-flame-curved"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-lightbulb"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fire-flame-simple"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-droplet"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="containers mt-1" style="background-color:aliceblue;">
+            <div class="heading2">
+                <div class="row">
+                    <div class="news-heading col-md-12">
+                        <div class="news-head">
+                            <div class="news-title">
+                                <h1>LATEST NEWS</h1>
+                                <div class="blured"></div>
+                            </div>
+                            <div class="news-button">
+                                <button>All News <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-cards">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner mt-3">
+                                  <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="row">
+                                        <div class="card col-md-4" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="row">
+                                        <div class="card col-md-4" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row">
+                                        <div class="card col-md-4" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card col-md-4 card-none" style="width: 18rem;">
+                                            <img src="./images/shavkat_mirziyoyev.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="social">
+                                                <div class="date">
+                                                    <p>18.08.2022</p>
+                                                </div>
+                                                <ul class="social-item-list">
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tender-adverts col-md-4 col-cm-7">
+                    <div class="tender">
+                        <div class="button-mix">
+                            <button class="btn btn-primary btn-change1">Tender</button>
+                            <button class="btn btn-primary btn-change2">Adverts</button>
+                        </div>
+                        <div class="advert1">
+                            <div class="centered">
+                                <div class="icon">
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+                                </div>
+                                <span class='text-center mt-1'>19,September 2022</span>
+                                <p class="text-center mt-1">International briefing</p>
+                                <button class="btn btn-outline-primary w-50 mx-auto">Reserved</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adverting">
+                        <div class="button-mix">
+                            <button class="btn btn-primary btn-change1">Tender</button>
+                            <button class="btn btn-primary btn-change2">Adverts</button>
+                        </div>
+                        <div class="advert2">
+                            <div class="centered">
+                                <div class="icon">
+                                    <i class="fa-regular fa-newspaper"></i>
+                                </div>
+                                <span class='text-center mt-1'>19,September 2022</span>
+                                <p class="text-center mt-1">All News Here</p>
+                                <button class="btn btn-outline-primary w-50 mx-auto">Click</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shaped col-md-1">
+                   <p class="text-center">Your advert is here</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:aliceblue;margin-top:-100px;">
+            <div class="container">
+                <div class="types">
+                    <div class="types-title">
+                        <h2 class="text-uppercase">Justice Service</h2>
+                        <div class="blured1"></div>
+                    </div>
+                    <div class="types_items">
+                        <div class="type_card">
+                            <div class="type_card_items">
+                                <i class="fa-regular fa-star"></i>
+                                <p>The rating of accommodation</p>
+                            </div>
+                        </div>
+                        <div class="type_card">
+                            <div class="type_card_items">
+                                <i class="fa fa-book"></i>
+                                <p>Documents of accommodation</p>
+                            </div>
+                        </div>
+                        <div class="type_card">
+                            <div class="type_card_items">
+                                <i class="fa fa-house-user"></i>
+                                <p>'My home' unit</p>
+                            </div>
+                        </div>
+                        <div class="type_card">
+                            <div class="type_card_items">
+                                <i class="fa fa-file-circle-check"></i>
+                                <p>Consumers' rights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services" style="background:url('./images/collegues.jpg');background-repeat:no-repeat;background-position:center;background-size:cover;padding:1.2rem 0rem;height:60vh;box-shadow:inset 150px 150px 150px 150px rgba(76, 106, 216, 0.8)">
+            <div class="container">
+                <div class="service_detail">
+                    <h2 class="text-center p-2">Interactive Services</h2>
+                    <div class="service_types">
+                        <div class="row carding">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="service_card_items">
+                                    <i class="fa fa-scroll"></i>
+                                    <p>Proposes to Ministry</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="service_card_items">
+                                    <i class="fa fa-file-circle-question"></i>
+                                    <p>Standarts</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="service_card_items">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <p>Web Payment</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 carding-distant">
+                                <div class="service_card_items">
+                                    <i class="fa fa-location-dot"></i>
+                                    <p>Welcome Job!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 carding-distant">
+                                <div class="service_card_items">
+                                    <i class="fa-solid fa-note-sticky"></i>
+                                    <p>Documentation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 carding-distant">
+                                <div class="service_card_items">
+                                    <i class="fa-regular fa-paste"></i>
+                                    <p>Open sources</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <div class="faq col-md-3">
+                <div class="types-title">
+                    <h2 class="text-uppercase">FAQ</h2>
+                    <div class="blured1 mb-3"></div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Accordion Item #4
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Accordion Item #5
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div><div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Accordion Item #6
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div><div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Accordion Item #7
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="statistics col-md-4">
+                <div class="types-title">
+                    <h2 class="text-uppercase">Statistics</h2>
+                    <div class="blured1 mb-3"></div>
+                </div>
+                <img src="./images/tax-statisttics.png" alt="..." style="width:480px;height:350px;box-shadow:7px 7px 7px 7px rgba(76, 106, 216, 0.8);padding:-2rem;">
+            </div>
+            <div class="communal_status col-md-4">
+                <div class="types-title">
+                    <h2 class="text-uppercase">Communal Services</h2>
+                    <div class="blured1 mb-3"></div>
+                </div>
+                <div class="service_list">
+                    <div class="service_list_title">
+                        <span></span>
+                        <span><b>Services</b></span>
+                        <span><i>E-Counter</i></span>
+                        <span><i>Per person</i></span>
+                    </div>
+                    <div class="service_list_items1">
+                        <div class="icons">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h5>Electricity</h5>
+                        <p><b>295</b></p>
+                        <p>None</p>
+                    </div>
+                    <div class="service_list_items2">
+                        <div class="icons">
+                            <i class="fa fa-droplet"></i>
+                        </div>
+                        <h5>Cold Water</h5>
+                        <p><b>1600</b></p>
+                        <p><b>14000</b></p>
+                    </div>
+                    <div class="service_list_items3">
+                        <div class="icons">
+                            <i class="fa fa-fire-flame-simple"></i>
+                        </div>
+                        <h5>Hot water</h5>
+                        <p><b>5242</b></p>
+                        <p><b>31000</b></p>
+                    </div>
+                    <div class="service_list_items4">
+                        <div class="icons">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <h5>Trash</h5>
+                        <p>None</p>
+                        <p><b>4500</b></p>
+                    </div>
+                    <div class="service_list_items5">
+                        <div class="icons">
+                            <i class="fa-sharp fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <h5>Gas</h5>
+                        <p><b>380</b></p>
+                        <p><b>7300</b></p>
+                    </div>
+                    <div class="service_list_items6">
+                        <div class="icons">
+                            <i class="fa fa-house-user"></i>
+                        </div>
+                        <h5>Home Tax</h5>
+                        <p>None</p>
+                        <p>None</p>
+                    </div>
+                </div>
+                <span>* Home Tax cost calculation releates to <b><i>living area</i></b> </span>
+            </div>
+        </div>
+        <div class="filials" style="background:url('./images/mustakillik.jpg');background-repeat:no-repeat;background-position:center;background-size:cover;box-shadow:inset 250px 250px 250px 250px rgba(100, 126, 223, 0.8);">
+            <div class="filials_title">
+                <div class="types-title">
+                    <h2 class="text-uppercase text-light">Filials</h2>
+                    <div class="blured1 mb-3"></div>
+                </div>
+                <div class="news-button">
+                    <button style="width:200px;" class="btn btn-outline-primary text-uppercase">All Filials <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="filials_image_details">
+                <img src="./images/Uzbekistan.png" alt="..." style="width:940px;height:450px;box-shadow:20px 20px 20px 20px rgba(0,0,0,0.3);border-radius:2%;">
+                <div class="filials_detail">
+                    <div class="filial_director">
+                        <i class="fa-solid fa-user me-2 mb-2"></i>
+                        <span>The Chairman</span>
+                    </div>
+                    <div class="e-mail">
+                        <i class="fa-solid fa-envelope me-2 mb-2"></i>
+                        <span>unknownministry@gmail.com</span>
+                    </div>
+                    <div class="phone_number">
+                        <i class="fa-solid fa-phone me-2 mb-2"></i>
+                        <span>(+99871) 222-02-22</span>
+                    </div>
+                    <div class="other">
+                        <i class="fa-solid fa-calendar-days me-2 mb-2"></i>
+                        <span>Application Day</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-photo-mix" style="background:url('./images/whiteback.jpg');background-repeat:no-repeat;background-position:center;background-size:cover;padding:1.2rem 0rem;height:100vh;box-shadow:inset 250px 250px 250px 250px rgba(255, 255, 255, 0.8);">
+            <div class="videos">
+                <div class="video-button">
+                    <div class="types-title">
+                        <h2 class="text-uppercase">Videos</h2>
+                        <div class="blured1 mb-3"></div>
+                    </div>
+                    <div class="news-button">
+                        <button style="width:200px;" class="btn btn-outline-primary text-uppercase">All Videos <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="video_items mt-4">
+                    <iframe width="320" height="220" src="https://www.youtube.com/embed/BPIYdvdzGfs" title="“Tadbirkorlar bu yerga bizning hisobotimizni eshitishga kelmagan”" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="320" height="220" src="https://www.youtube.com/embed/e4YLwGv8M2E" title="Ochiq muloqot | Бектемир тумани масул ходимлари билан учрашув [10.09.2019]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="320" height="220" src="https://www.youtube.com/embed/1t1v7H9qWPs" title="Ochiq muloqot | "Maxsustrans" ishlab chiqarish boshqarmasi DUK rahbarlari bilan suhbat [28.11.2018]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="320" height="220" src="https://www.youtube.com/embed/zYIYSXkJ5Kc" title="Президентнинг тадбиркорлар билан очиқ мулоқоти: янги ташаббуслар, қулайлик ва енгилликлар" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="photos">
+                <div class="photo-button">
+                    <div class="types-title">
+                        <h2 class="text-uppercase">Photos</h2>
+                        <div class="blured1 mb-3"></div>
+                    </div>
+                    <div class="news-button">
+                        <button style="width:200px;" class="btn btn-outline-primary text-uppercase">All Photos <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="photo_items mt-4">
+                    <img class="img-none" src="./images/tadbir1.jpg" alt="..." style="width:320px; height:220px;">
+                    <img class="img-none" src="./images/tadbir2.jpeg" alt="..." style="width:320px; height:220px;">
+                    <img  src="./images/tadbir3.jpg" alt="..." style="width:320px; height:220px;">
+                    <img  src="./images/tadbir4.jpg" alt="..." style="width:320px; height:220px;">
+                </div>
+            </div>
+        </div>
+        <div class="other_pages" style="background-color:aliceblue;">
+            <div class="page_title">
+                <div class="types-title">
+                    <h2 class="text-uppercase">Resources</h2>
+                    <div class="blured1 mb-3"></div>
+                </div>
+                <button class="btn btn-outline-primary">See All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="page_carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="types_items">
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Uzbekistan Communal Seervice Association</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Uzbekistan Water and Trube Service</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Tashkent Canalisation System</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Respublican Communal Dispatch service</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="types_items">
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Uzbekistan Electricity System</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Uzbekistan NeftGaz LTD</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Recycling Department of City</p>
+                                </div>
+                            </div>
+                            <div class="type_card">
+                                <div class="type_card_items">
+                                    <img src="./images/gerb.png" class="d-block" alt="...">
+                                    <p>Communal Tax Department</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="footer text-light" style="background-color:#30527F;height:53vh;width:100%;">
+            <div class="main_footer">
+                <div class="footer_detail col-md-5">
+                    <div class="footer1-items">
+                        <div class="footer_logo">
+                            <img src="./images/allianzlogowhite2.png" alt="..." style="width:60px;height:60px;">
+                        </div>
+                        <h6>
+                            The Communal <br>
+                            Servise Department <br>
+                            of Uzbekistan
+                        </h6>
+                    </div>
+                    <div class="footer2-items mt-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Address: 100035, Tashkent city, Yunusobod district, Niyazbek Street,1-home</p>
+                    </div>
+                    <div class="footer3-items">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone No:(+998 71) 234-11-03</p>
+                    </div>
+                    <div class="footer4-items">
+                        <i class="fa-solid fa-fax"></i>
+                        <p>Fax:(+998 71)234-11-03</p>
+                    </div>
+                    <div class="footer5-items">
+                        © 2022-2023 The Communal Servise Department of Uzbekistan
+                    </div>
+                </div>
+                <div class="footer_page col-md-4">
+                    <ul>
+                        <li><a href="#">About Ministry</a></li><hr>
+                        <li><a href="#">Committee</a></li><hr>
+                        <li><a href="#">News</a></li><hr>
+                        <li><a href="#">Documentation</a></li><hr>
+                        <li><a href="#">Connect</a></li>
+                    </ul>
+                </div>
+                <div class="footer_image ms-5 col-md-3">
+                    <div class="footer_image_frame">
+                        <div class="footer_image_stamp">
+                            <img src="./images/approvedstamp.png" alt="..." style="width:150px;height:150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="final-one text-center">
+                <p>© All Rights Reserved</p>
+            </div>
+            <div class="footer_policy">
+                <div class="footer_policy_frame">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <p class="mt-2">All Rights <span>Reserved.</span></p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <script src="./java.js"></script>
+    </body>
+</html>
